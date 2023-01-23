@@ -1,0 +1,108 @@
+{
+	"pages": [{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "便捷生活",
+				"onReachBottomDistance": 50 //设置上拉触底的高度
+			}
+
+		}, {
+			"path": "pages/news/news",
+			"style": {
+				"navigationBarTitleText": "便捷生活",
+				"usingComponents": {
+					"van-tabs": "/wxcomponents/vant-weapp-dev/dist/tabs/index",
+					"van-tab": "/wxcomponents/vant-weapp-dev/dist/tab/index"
+				}
+			}
+
+		}, {
+			"path": "pages/service/service",
+			"style": {
+				"navigationBarTitleText": "便捷生活"
+			}
+
+		}
+
+		, {
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "便捷生活"
+			}
+
+		}
+	],
+	"subPackages": [{
+		"root": "subpkg",
+		"pages": [{
+			"path": "resume/resume",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "resourcesImage/resourcesImage",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "diary/diary",
+			"style": {
+				"navigationBarTitleText": "日记本",
+				"enablePullDownRefresh": false,
+				"usingComponents": {
+					"van-picker": "/wxcomponents/vant-weapp-dev/dist/picker/index",
+					"van-picker-column": "/wxcomponents/vant-weapp-dev/dist/picker-column/index"
+				}
+			}
+
+		}    ,{
+                    "path" : "writediary/writediary",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "写日记",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "便捷生活",
+		"navigationBarBackgroundColor": "#4A9CE7",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4"
+		}
+	},
+	"tabBar": {
+		"selectedColor": "#4A9CE7",
+		"list": [{
+				"pagePath": "pages/home/home",
+				"text": "首页",
+				"iconPath": "static/tab_icons/hone.png",
+				"selectedIconPath": "static/tab_icons/home-active.png"
+			},
+			// {
+			// 	"pagePath": "pages/service/service",
+			// 	"text": "服务",
+			// 	"iconPath": "static/tab_icons/service.png",
+			// 	"selectedIconPath": "static/tab_icons/service-active.png"
+			// }, 
+			{
+				"pagePath": "pages/news/news",
+				"text": "消息",
+				"iconPath": "static/tab_icons/news.png",
+				"selectedIconPath": "static/tab_icons/news-active.png"
+			}, {
+				"pagePath": "pages/mine/mine",
+				"text": "我的",
+				"iconPath": "static/tab_icons/mine.png",
+				"selectedIconPath": "static/tab_icons/mine-active.png"
+			}
+		]
+	}
+}
